@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 400px; height: 500px;">
+
+<head>
+  <title>PageSage</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .gradient-container {
+      height: 100%;
+      width: 400px;
+      background: linear-gradient(45deg, #a6935fad, #4c6940ae, #a6935fa1);
+      background-size: 200% 200%;
+      animation: gradientBackground 50s infinite;
+      color: #003300; /* Dark Green */
+      overflow: hidden;
+      border: 3px solid #003300; /* Dark Green Border around the whole extension */
+    }
+
+    .header {
+      padding: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent; /* Set header background to transparent */
+    }
+
+    .logo {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 24px;
+      letter-spacing: 5px;
+    }
+
+    .logo img {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      left: -110px; 
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .logo span {
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #ffffff;
+      text-shadow: 
+          1px 1px 0px #72614c, 
+          -1px -1px 0px #a08b5f,
+          -1px 1px 0px #a1905e,
+          1px -1px 0px #987550;
+      font-weight: bold;
+    }
+
+    .content-container {
+      padding: 20px;
+      max-height: 430px;
+      overflow-y: auto;
+      background-color: transparent;
+    }
+
+    .question {
+      background: #e8e8dc;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 51, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .question:hover {
+      transform: translateY(-5px);
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    p.question-text:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #003300;
+      margin-top: 10px;
+    }
+
+    .copied-popup {
+      display: none;
+      background: rgba(17, 75, 17, 0.7);
+      color: #f4f4e8;
+      padding: 5px 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      text-align: center;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .copied-popup.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+    
+    @keyframes gradientBackground {
+      0% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: 0% 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gradient-container">
+    <div class="header">
+      <div class="logo">
+        <img class="logo-img" src="scansage.png" alt="PageSage Icon" />
+        <span>PageSage</span>
+      </div>
+    </div>
+    <div class="content-container" id="questionsAndAnswersContainer"></div>
+  </div>
+
+  <div class="copied-popup" id="copiedPopup">Ans. Copied!</div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

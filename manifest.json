@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "PageSage (BETA)",
+  "version": "0.25",
+  "description": "Webpage scanner. See a question, get an answer",
+  "permissions": ["activeTab", "storage", "scripting", "contextMenus"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "scansage.png",
+      "48": "scansage.png",
+      "128": "scansage.png"
+    }
+  },
+  "icons": {
+    "16": "scansage.png",
+    "48": "scansage.png",
+    "128": "scansage.png"
+  },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
