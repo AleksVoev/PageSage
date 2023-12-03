@@ -14,7 +14,7 @@ PageSage is currently in its beta phase and hasn't been officially published yet
 - **Compatibility**: Currently, the extension doesn't support all websites, and efforts are underway to extend compatibility.
 - **Accuracy & Efficiency**: The extension is being optimized to ensure the accuracy and structural efficiency of the responses.
 - **API Key Management**: Developing secure and user-friendly solutions for handling API keys, considering user-provided API keys.
-- **Monetization Strategy**: Evaluating the possibility of making the extension paid to maintain API key expenses or allowing users to input their own API keys. Currently sits in repository with NO API KEY!
+- **Monetization Strategy**: Evaluating the possibility of making the extension paid to maintain API key expenses or allowing users to input their own API keys. Currently sits in a repository with NO API KEY!
   
 ## 🌿 **Upcoming Features**
 - **Text Highlighting**: Introducing the ability to highlight specific questions or phrases on a website for quick lookups.
@@ -26,10 +26,10 @@ PageSage is currently in its beta phase and hasn't been officially published yet
 - **Website Limitations**: The extension may not work seamlessly on all websites; user discretion is advised.
 
 ## 💡 **Contributions & Feedback**
-We warmly welcome developers, users, and enthusiasts to contribute to the development of PageSage. Your feedback, suggestions, and contributions will significantly aid in refining and enhancing this extension.
+I warmly welcome developers, users, and enthusiasts to contribute to the development of PageSage. Your feedback, suggestions, and contributions will significantly aid in refining and enhancing this extension.
 
 ## 📝 **License**
 MIT License
 
 ## 📞 **Contact & Support**
-For any queries, support requests, or assistance, please contact [Your Contact Information].
+For any queries, support requests, or assistance, please contact aleksvoev@gmail.com.
